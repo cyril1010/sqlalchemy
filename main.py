@@ -15,3 +15,4 @@ db_records = session.query(User).all()
 
 for record in db_records:
     print(record)
+    
