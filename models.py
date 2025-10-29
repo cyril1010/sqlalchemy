@@ -2,6 +2,7 @@
 
 from sqlalchemy import create_engine, Column, Integer, String, Boolean, Date, Float
 from sqlalchemy.orm import declarative_base, sessionmaker
+from datetime import date
 
 DATABASE_URL = "sqlite:///./database.db"
 
