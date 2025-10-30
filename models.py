@@ -4,8 +4,8 @@ from sqlalchemy import create_engine, Column, Integer, String, Boolean, Date, Fl
 from sqlalchemy.orm import declarative_base, sessionmaker
 from datetime import date
 
-# DATABASE_URL = "sqlite:///./database.db"
-DATABASE_URL = 'postgresql://postgres:evoqins2025@localhost:5432/cyb'
+DATABASE_URL = "sqlite:///./database.db"
+# DATABASE_URL = 'postgresql://postgres:evoqins2025@localhost:5432/cyb'
 
 
 
