@@ -11,6 +11,8 @@ user5 = User(name="Ethan", email="ethan@example.com", age=22, country="India", s
 session.add(user1)
 session.add(user2)
 session.add(user3)
+session.add(user4)
+session.add(user5)
 
 session.commit()
 
