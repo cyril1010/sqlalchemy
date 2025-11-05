@@ -5,7 +5,8 @@ from sqlalchemy.orm import declarative_base, sessionmaker
 from datetime import date
 
 # DATABASE_URL = "sqlite:///./database.db"
-DATABASE_URL = 'postgresql://postgres:evoqins2025@localhost:5432/cyb'
+DATABASE_URL = "postgresql://postgres:akzpass@localhost:5432/akshay"
+
 
 
 
@@ -31,8 +32,8 @@ class User(Base):
     is_active = Column(Boolean, default=True)
     join_date = Column(Date, default=date.today)
 
-    def __repr__(self):
-        return f"<User(id={self.id}, name='{self.name}', age='{self.age}', email='{self.email}')>"
+    # def __repr__(self):
+    #     return f"<User(id={self.id}, name='{self.name}', age='{self.age}', email='{self.email}')>"
 
 Base.metadata.create_all(bind=engine)
 
